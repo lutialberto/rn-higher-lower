@@ -118,9 +118,9 @@ android {
     signingConfigs {
         release {
             storeFile file('keystore.jks')
-            storePassword 'APPCENTER_KEYSTORE_PASSWORD'
-            keyAlias 'APPCENTER_KEY_ALIAS'
-            keyPassword 'APPCENTER_KEY_PASSWORD'
+            storePassword '20230401'
+            keyAlias '20230401'
+            keyPassword '20230401'
         }
         debug {
             storeFile file('debug.keystore')
