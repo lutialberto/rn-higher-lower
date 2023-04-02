@@ -103,7 +103,7 @@ android {
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
-        versionName "0.1.0"
+        versionName "0.1.1"
         archivesBaseName = "${applicationId}-${getDate()}-${versionName}(${versionCode})"
     }
 
@@ -118,9 +118,9 @@ android {
     signingConfigs {
         release {
             storeFile file('keystore.jks')
-            storePassword '20230401'
-            keyAlias '20230401'
-            keyPassword '20230401'
+            storePassword 'APPCENTER_KEYSTORE_PASSWORD'
+            keyAlias 'APPCENTER_KEY_ALIAS'
+            keyPassword 'APPCENTER_KEY_PASSWORD'
         }
         debug {
             storeFile file('debug.keystore')
